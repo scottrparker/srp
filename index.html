@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,6 +85,8 @@
     justify-content: center;
     margin-bottom: 18px;
     animation: fadeUp 0.7s ease both;
+    padding: 0 12px;
+    box-sizing: border-box;
   }
 
   .name-rule {
@@ -98,14 +101,14 @@
 
   .name {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-size: clamp(1.8rem, 8vw, 5rem);
     font-weight: 900;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: var(--white);
-    line-height: 1;
+    line-height: 1.1;
     animation: none;
     display: inline-block;
-    padding: 16px 44px 14px;
+    padding: 16px clamp(16px, 5vw, 44px) 14px;
     background: linear-gradient(160deg, rgba(15,35,100,0.9) 0%, rgba(18,42,110,0.8) 100%);
     border-top: 2px solid var(--gold);
     border-bottom: 2px solid var(--gold);
@@ -114,7 +117,9 @@
       0 6px 36px rgba(0,0,0,0.4),
       0 0 80px rgba(80,130,255,0.15);
     text-shadow: 0 2px 12px rgba(0,0,0,0.5);
-    white-space: nowrap;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
   }
 
   .title-line {
